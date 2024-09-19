@@ -1,9 +1,11 @@
 import Link from "next/link";
 const Navbar = () => {
   return (
-    <div className="navbar top-0 z-50 fixed flex items-center bg-gray/30 backdrop-blur-sm p-3 w-full ">
-      <h1 className="text-orange-400 text-4xl uppercase font-mono">Ahsan <br/><span  className="text-3xl text-slate-50 font-extralight" >SIDDIQUI</span></h1>
-      <ul className="flex gap-4 absolute right-0 text-gray-200 text-lg px-10">
+    <div id="nav" className="top-0 z-50 fixed flex items-center bg-gray/30 backdrop-blur-sm w-screen xs:px-2 ">
+
+      <h1 id="logo" className="text-orange-400 uppercase font-mono xs:text-2xl ">Ahsan <br/><span  className=" text-slate-50 font-extralight xs:text-xl" >SIDDIQUI</span></h1>
+
+      <ul className="flex gap-4 absolute right-0 text-gray-200 xs:text-base xs:pr-7">
         <Link href="/">
           <li>Home</li>
         </Link>
