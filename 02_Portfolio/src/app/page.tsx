@@ -1,7 +1,10 @@
 import Image from "next/image";
 import Navbar from "@/components/Navbar"
 import Links from "@/components/Links"
+import About from "@/components/About"
+import Connect from "@/components/Connect"
 import Link from "next/link";
+
 export default function Home() {
   return (
     // Main page div
@@ -12,35 +15,35 @@ export default function Home() {
 
 {/* HOME PAGE-LEFT */}
           {/* NAME */}
-        <div className=" uppercase absolute left-4  text-gray-50  xs:text-6xl xs:max-w-fit xs:top-36 md:text-8xl lg:text-8xl lg:top-60 lg:left-0 xl:text-9xl xl:top-60">
+        <div className=" uppercase absolute left-4  text-gray-50  xs:text-6xl xs:max-w-fit xs:top-36 md:text-8xl lg:text-8xl lg:top-52 lg:left-0 lg:w-72 tt:top-80 tt:text-9xl xl:top-80">
           Ahsan ahmed
           <br />
           siddiqui
         </div>
 
            {/* PICTURE */}
-        <div className="absolute top-32 bg-gray/30 backdrop-blur-sm xs:right-0 lg:top-56 lg:left-96">
+        <div className="absolute top-32 bg-gray/30 backdrop-blur-sm xs:right-0 lg:top-48 lg:right-0 tt:left-96 tt:top-64">
           <Image
             src="/pfp1.png"
             width={500}
             height={0}
             alt="Picture of the author"
-            className="xs:w-40 md:w-96 lg:w-72 xl:w-2/6"
+            className="xs:w-40 md:w-96 lg:w-72 tt:w-2/6 xl:w-2/6"
           />
         </div>
         <Links />
 
 {/* HOME PAGE-RIGHT */}
-        <div id="Right" className="absolute bg-white rounded-md bg-opacity-10 xs:bottom-28 xs:mx-1 xs:p-0 as:bottom-44 md:bottom-24 lg:right-0 lg:bottom-96 lg:w-1/2 lg:mr-5 lg:p-5">
+        <div id="Right" className="absolute bg-white/5 rounded-md bg-opacity-10 xs:bottom-28 xs:mx-1 xs:p-0 as:bottom-44 md:bottom-24 lg:right-0 lg:p-5 tt:right-0 tt:bottom-72 tt:w-2/4">
 
           {/* Heading */}
-          <h1 className="text-black uppercase font-extrabold xs:text-3xl as:text-4xl lg:text-6xl xl:text-7xl">
-            I am a, <span className="text-slate-200">computer Science</span>
+          <h1 className="text-slate-300 uppercase font-extrabold xs:text-3xl as:text-4xl lg:text-4xl tt:text-7xl">
+            I am a, <span className="bg-black font-light mr-2">computer Science</span> 
             Student
           </h1>
 
           {/* DETAILS */}
-          <h5 className="text-black font-semibold xs:text-xs as:text-sm lg:text-2xl xl:text-3xl xl:py-2">
+          <h5 className="text-white/55 font-semibold xs:text-xs as:text-sm lg:text-2xl xl:text-3xl xl:py-2">
             In today's rapidly evolving digital world, technology shapes every
             aspect of our lives. My fascination with this transformation led me
             to web development. I specialize in building dynamic, user-centric
@@ -54,36 +57,11 @@ export default function Home() {
             </button>
           </Link>
         </div>
+
       </div>
 
-      {/* ABOUT PAGE */}
-      <div
-        id="About"
-        className="bg-black h-screen flex flex-wrap flex-col items-center"
-      >
-
-        <div className="Heading mt-24 border-b border-slate-500/30">
-
-        {/* About heading */}
-        <h1 className="text-white xs:text-3xl uppercase ">about me</h1>
-        </div>
-        
-        <div className="About ">
-          <h3 className="text-white mx-6 my-4" >I am pursuing a Bachelor's in Computer Science at GUtech, enhancing my skills as a developer. Simultaneously, I am studying Dars-e-Nizami at Hikmah Institute, gaining timeless wisdom to address contemporary challenges. I am currently focused on building expertise in HTML, CSS, TypeScript, Tailwind, ReactJS, Next.js, Node.js, and MongoDB.</h3>
-        </div>
-        {/* Images    */}
-        <div className="Pictures xs:flex-col flex flex-wrap items-center gap-5 mt-7 mx-4">
-
-        <div className="gutech">
-          <Image src="/gu.webp" width={200} height={0} alt="Picture" className="xs:w-32"/>
-        </div>
-
-        <div className="hikmah">
-          <Image src="/hikmah.png" width={200} height={0} alt="Picture" className="xs:w-24"/>
-        </div>
-        </div>
-        
-      </div>
+      <About/>
+      <Connect/>      
     </div>
   );
 }
