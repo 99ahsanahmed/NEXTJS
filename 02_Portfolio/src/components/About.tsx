@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { FaHtml5,FaCss3Alt,FaNodeJs,FaGitAlt,FaCloudDownloadAlt } from "react-icons/fa";
 import { RiJavascriptFill,RiTailwindCssFill,RiReactjsFill,RiNextjsFill } from "react-icons/ri";
 import { DiMongodb } from "react-icons/di";
