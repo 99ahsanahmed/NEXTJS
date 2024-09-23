@@ -10,45 +10,45 @@ export default function Home() {
     // Main page div
     <div className="main bg-gradient-to-tr from-black to-slate-950 overflow-hidden">
       {/* HOME PAGE */}
-      <div id="home" className="bg-gradient-to-tr from-black to-slate-950  h-screen w-screen">
+      <div id="home" className="flex flex-col justify-center items-center  bg-gradient-to-tr from-black to-slate-950 h-screen w-screen xs:gap-10 lg:gap-16 ">
         <Navbar />
 
 {/* HOME PAGE-LEFT */}
+          <div className="LeftSide flex  items-center">
           {/* NAME */}
-        <div className=" uppercase absolute left-4  text-gray-50  xs:text-6xl xs:max-w-fit xs:top-36 md:text-8xl lg:text-8xl lg:top-52 lg:left-0 lg:w-72 tt:top-80 tt:text-9xl xl:top-80">
-          Ahsan ahmed
-          <br />
-          siddiqui
+        <div className="uppercase text-white text-justify as:font-extrabold xs:text-lg md:text-4xl lg:text-6xl tt:9xl">
+          Ahsan ahmed siddiqui.
         </div>
 
            {/* PICTURE */}
-        <div className="absolute top-32 bg-gray/30 backdrop-blur-sm xs:right-0 lg:top-48 lg:right-0 tt:left-96 tt:top-64">
+        <div className="">
           <Image
             src="/pfp1.png"
-            width={500}
+            width={450}
             height={0}
             alt="Picture of the author"
-            className="xs:w-40 md:w-96 lg:w-72 tt:w-2/6 xl:w-2/6"
+            className="xs:w-28 md:w-40 lg:w-56"
           />
         </div>
         <Links />
+        </div>
 
-{/* HOME PAGE-RIGHT */}
-        <div id="Right" className="absolute bg-white/5 rounded-md bg-opacity-10 xs:bottom-28 xs:mx-1 xs:p-0 as:bottom-44 md:bottom-24 lg:right-0 lg:p-5 tt:right-0 tt:bottom-72 tt:w-2/4">
+{/* HOME PAGE-DOWN */}
+        <div id="Down" className="flex flex-col bg-white/5 rounded-md bg-opacity-10 p-4 lg:ml-5 lg:mr-10">
 
           {/* Heading */}
-          <h1 className="text-slate-300 uppercase font-extrabold xs:text-3xl as:text-4xl lg:text-4xl tt:text-7xl">
+          <h1 className="text-slate-300 uppercase font-extrabold md:text-4xl lg:text-5xl tt:text-6xl">
             I am a&#44; <span className="bg-black font-light mr-2">computer Science</span> 
             Student
           </h1>
 
           {/* DETAILS */}
-          <h5 className="text-white/55 font-semibold xs:text-xs as:text-sm lg:text-2xl xl:text-3xl xl:py-2">
+          <p className="text-white/55  font-semibold text-justify xs:text-sm xs:font-thin md:font-bold md:text-sm lg:py-2 lg:px-16 lg:text-xl tt:text-2xl">
             In today&#39;s rapidly evolving digital world&#44; technology shapes every
             aspect of our lives. My fascination with this transformation led me
             to web development. I specialize in building dynamic&#44; user centric
             web applications using the latest&#44; cutting edge technologies
-          </h5>
+          </p>
 
           {/* BUTTON */}
           <Link href="#About">
