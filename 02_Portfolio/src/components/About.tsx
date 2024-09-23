@@ -20,7 +20,7 @@ const About = () => {
 
     {/* ABOUT DETAILS */}
     <div className="About text-white xs:text-base md:text-xl my-4 xs:mx-6 md:mx-10 md:my-8 lg:text-2xl tt:text-4xl tt:mx-32 xl:mx-44 xl:text-5xl">
-    <h3 className="" >I am pursuing a <span className="text-black  bg-white/90 rounded-lg"> Bachelor's in Computer Science</span> at GUtech, enhancing my skills as a developer. Simultaneously, I am studying Dars-e-Nizami at Hikmah Institute, gaining timeless wisdom to address contemporary challenges. I am currently focused on building expertise in HTML, CSS, TypeScript, Tailwind, ReactJS, Next.js, Node.js, Git, and MongoDB. Additionally, I am doing certifications in GenAI from GIAIC, and web development from NED PITP and Udemy.</h3>
+    <h3 className="" >I am pursuing a <span className="text-black  bg-white/90 rounded-lg"> Bachelor&#39;s in Computer Science</span> at GUtech enhancing my skills as a developer. Simultaneously&#44; I am studying Dars-e-Nizami at Hikmah Institute&#44; gaining timeless wisdom to address contemporary challenges. I am currently focused on building expertise in HTML&#44; CSS&#44; TypeScript&#44; Tailwind&#44; ReactJS&#44; Next.js&#44; Node.js&#44; Git&#44; and MongoDB. Additionally&#44; I am doing certifications in GenAI from GIAIC&#44; and web development from NED PITP and Udemy.</h3>
     
     {/* RESUME */}
     <div className="flex gap-5 relative bg-white/5 text-white text-xl w-fit p-2 rounded-xl mt-2" ><button >reume</button> <FaCloudDownloadAlt/></div>

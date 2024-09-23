@@ -38,16 +38,16 @@ export default function Home() {
 
           {/* Heading */}
           <h1 className="text-slate-300 uppercase font-extrabold xs:text-3xl as:text-4xl lg:text-4xl tt:text-7xl">
-            I am a, <span className="bg-black font-light mr-2">computer Science</span> 
+            I am a&#44; <span className="bg-black font-light mr-2">computer Science</span> 
             Student
           </h1>
 
           {/* DETAILS */}
           <h5 className="text-white/55 font-semibold xs:text-xs as:text-sm lg:text-2xl xl:text-3xl xl:py-2">
-            In today's rapidly evolving digital world, technology shapes every
+            In today&#39;s rapidly evolving digital world&#44; technology shapes every
             aspect of our lives. My fascination with this transformation led me
-            to web development. I specialize in building dynamic, user-centric
-            web applications using the latest, cutting-edge technologies
+            to web development. I specialize in building dynamic&#44; user centric
+            web applications using the latest&#44; cutting edge technologies
           </h5>
 
           {/* BUTTON */}
