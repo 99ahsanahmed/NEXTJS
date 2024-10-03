@@ -3,7 +3,9 @@ import Navbar from "@/components/Navbar"
 import Links from "@/components/Links"
 import About from "@/components/About"
 import Connect from "@/components/Connect"
+import Projects from "@/components/Project";
 import Link from "next/link";
+import Project from "@/components/Project";
 
 export default function Home() {
   return (
@@ -16,7 +18,7 @@ export default function Home() {
 {/* HOME PAGE-LEFT */}
           <div className="LeftSide flex  items-center">
           {/* NAME */}
-        <div className="uppercase text-white text-justify as:font-extrabold xs:text-lg md:text-4xl lg:text-6xl tt:9xl">
+        <div className="uppercase text-white text-justify as:font-extrabold xs:text-lg md:text-4xl lg:text-5xl tt:9xl">
           Ahsan ahmed siddiqui.
         </div>
 
@@ -27,7 +29,7 @@ export default function Home() {
             width={450}
             height={0}
             alt="Picture of the author"
-            className="xs:w-28 md:w-40 lg:w-56"
+            className="xs:w-28 md:w-40 lg:w-28"
           />
         </div>
         <Links />
@@ -43,7 +45,7 @@ export default function Home() {
           </h1>
 
           {/* DETAILS */}
-          <p className="text-white/55  font-semibold text-justify xs:text-sm xs:font-thin md:font-bold md:text-sm lg:py-2 lg:px-16 lg:text-xl tt:text-2xl">
+          <p className="text-white/55  font-semibold text-justify xs:text-sm xs:font-thin md:font-bold md:text-sm lg:py-2 lg:px-16 lg:text-lg tt:text-2xl">
             In today&#39;s rapidly evolving digital world&#44; technology shapes every
             aspect of our lives. My fascination with this transformation led me
             to web development. I specialize in building dynamic&#44; user centric
@@ -61,6 +63,7 @@ export default function Home() {
       </div>
 
       <About/>
+      <Project/>
       <Connect/>      
     </div>
   );
