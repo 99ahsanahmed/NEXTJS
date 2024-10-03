@@ -63,20 +63,6 @@ const About = () => {
           />
         </div>
       </div>
-
-      {/* ABOUT FOOTER */}
-      <footer className="flex absolute bottom-0 my-4 text-white/20 xs:text-3xl xs:gap-2 md:text-4xl tt:text-5xl tt:gap-10">
-        <FaHtml5 className="hover:text-white" />
-        <FaCss3Alt className="hover:text-white" />
-        <RiJavascriptFill className="hover:text-white" />
-        <BiLogoTypescript className="hover:text-white" />
-        <RiTailwindCssFill className="hover:text-white" />
-        <RiReactjsFill className="hover:text-white" />
-        <RiNextjsFill className="hover:text-white" />
-        <FaNodeJs className="hover:text-white" />
-        <DiMongodb className="hover:text-white" />
-        <FaGitAlt className="hover:text-white" />
-      </footer>
     </div>
   );
 }
