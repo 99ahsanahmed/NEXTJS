@@ -1,8 +1,4 @@
 import Image from "next/image";
-import { FaHtml5,FaCss3Alt,FaNodeJs,FaGitAlt } from "react-icons/fa";
-import { RiJavascriptFill,RiTailwindCssFill,RiReactjsFill,RiNextjsFill } from "react-icons/ri";
-import { DiMongodb } from "react-icons/di";
-import { BiLogoTypescript } from "react-icons/bi";
 const About = () => {
   return (
     // ABOUT
