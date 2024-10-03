@@ -3,7 +3,6 @@ import Navbar from "@/components/Navbar"
 import Links from "@/components/Links"
 import About from "@/components/About"
 import Connect from "@/components/Connect"
-import Projects from "@/components/Project";
 import Link from "next/link";
 import Project from "@/components/Project";
 
